@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PetVault — The Future of Pet Health</title>
+<title>Honeybee — The Future of Pet Health</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ─── RESET + ROOT ─────────────────────────────────────── */
@@ -15,31 +15,31 @@ img{display:block;max-width:100%}
 
 :root{
   /* Brand palette */
-  --violet:    #6D28D9;
-  --violet-hi: #7C3AED;
-  --violet-lo: #4C1D95;
-  --violet-bg: #F5F3FF;
-  --violet-bd: #DDD6FE;
-  --coral:     #F97316;
-  --coral-bg:  #FFF7ED;
-  --coral-bd:  #FED7AA;
-  --cyan:      #0891B2;
-  --cyan-bg:   #ECFEFF;
-  --cyan-bd:   #A5F3FC;
-  --amber:     #D97706;
-  --amber-bg:  #FFFBEB;
-  --amber-bd:  #FDE68A;
-  --green:     #059669;
-  --green-bg:  #ECFDF5;
-  --green-bd:  #A7F3D0;
+  --gold: #FFB71A;
+  --gold-hi: #FFC847;
+  --gold-lo: #C8850B;
+  --gold-bg: #FFF8E5;
+  --gold-bd: #FFE4A0;
+  --rust: #EB6B40;
+  --rust-bg: #FDEEE8;
+  --rust-bd: #F8C4B0;
+  --earth: #7C4A2D;
+  --earth-bg: #F5EDE4;
+  --earth-bd: #D4B896;
+  --ochre: #A8540E;
+  --ochre-bg: #FAF1E0;
+  --ochre-bd: #E8C895;
+  --moss: #5A7340;
+  --moss-bg: #EDF0E5;
+  --moss-bd: #C3D1A3;
 
   /* Neutrals */
-  --ink:    #0F0A1E;
-  --ink-2:  #2D2555;
-  --text:   #1C1628;
-  --text-2: #4B4468;
-  --text-3: #7C7599;
-  --text-4: #B5B0C8;
+  --ink: #1A1410;
+  --ink-2: #3D2F24;
+  --text: #201814;
+  --text-2: #5C4A3C;
+  --text-3: #8A7868;
+  --text-4: #B8AC9A;
   --line:   rgba(0,0,0,.07);
   --line-2: rgba(0,0,0,.12);
   --bg:     #FAFAFA;
@@ -65,10 +65,10 @@ img{display:block;max-width:100%}
   --r-pill: 999px;
 
   /* Shadows */
-  --sh-sm:   0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(109,40,217,.08);
-  --sh-md:   0 4px 16px rgba(0,0,0,.06),0 12px 40px rgba(109,40,217,.1);
-  --sh-lg:   0 8px 32px rgba(0,0,0,.08),0 24px 64px rgba(109,40,217,.14);
-  --sh-glow: 0 0 40px rgba(109,40,217,.25);
+  --sh-sm:   0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(168,84,14,.08);
+  --sh-md:   0 4px 16px rgba(0,0,0,.06),0 12px 40px rgba(168,84,14,.1);
+  --sh-lg:   0 8px 32px rgba(0,0,0,.08),0 24px 64px rgba(168,84,14,.14);
+  --sh-glow: 0 0 40px rgba(168,84,14,.25);
 }
 
 body{
@@ -86,19 +86,19 @@ body{
 
 /* Gradient text */
 .grad{
-  background:linear-gradient(135deg,#7C3AED 0%,#C026D3 50%,#F97316 100%);
+  background:linear-gradient(135deg,#FFB71A 0%,#EB6B40 60%,#A8540E 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
 }
 .grad-blue{
-  background:linear-gradient(135deg,#0891B2 0%,#6D28D9 100%);
+  background:linear-gradient(135deg,#7C4A2D 0%,#A8540E 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
 }
 .grad-warm{
-  background:linear-gradient(135deg,#D97706 0%,#F97316 60%,#EC4899 100%);
+  background:linear-gradient(135deg,#A8540E 0%,#EB6B40 60%,#FFB71A 100%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -110,11 +110,11 @@ body{
   font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
   padding:5px 14px;border-radius:var(--r-pill);
 }
-.tag-violet{background:var(--violet-bg);color:var(--violet)}
-.tag-coral{background:var(--coral-bg);color:var(--coral)}
-.tag-cyan{background:var(--cyan-bg);color:var(--cyan)}
-.tag-amber{background:var(--amber-bg);color:var(--amber)}
-.tag-green{background:var(--green-bg);color:var(--green)}
+.tag-gold{background:var(--gold-bg);color:var(--gold)}
+.tag-rust{background:var(--rust-bg);color:var(--rust)}
+.tag-earth{background:var(--earth-bg);color:var(--earth)}
+.tag-ochre{background:var(--ochre-bg);color:var(--ochre)}
+.tag-moss{background:var(--moss-bg);color:var(--moss)}
 
 /* Buttons */
 .btn{
@@ -126,17 +126,17 @@ body{
 }
 .btn:active{transform:scale(.98)}
 .btn-primary{
-  background:var(--violet);color:#fff;
-  box-shadow:0 4px 16px rgba(109,40,217,.3);
+  background:var(--gold);color:#fff;
+  box-shadow:0 4px 16px rgba(168,84,14,.3);
 }
-.btn-primary:hover{background:var(--violet-hi);box-shadow:0 6px 24px rgba(109,40,217,.4)}
+.btn-primary:hover{background:var(--gold-hi);box-shadow:0 6px 24px rgba(168,84,14,.4)}
 .btn-coral{
-  background:var(--coral);color:#fff;
-  box-shadow:0 4px 16px rgba(249,115,22,.3);
+  background:var(--rust);color:#fff;
+  box-shadow:0 4px 16px rgba(235,107,64,.3);
 }
-.btn-coral:hover{background:#EA6C0C;box-shadow:0 6px 24px rgba(249,115,22,.4)}
+.btn-coral:hover{background:#EA6C0C;box-shadow:0 6px 24px rgba(235,107,64,.4)}
 .btn-white{
-  background:#fff;color:var(--violet);
+  background:#fff;color:var(--gold);
   box-shadow:var(--sh-sm);
 }
 .btn-white:hover{box-shadow:var(--sh-md)}
@@ -146,10 +146,10 @@ body{
 }
 .btn-outline:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
 .btn-outline-dark{
-  background:transparent;color:var(--violet);
-  border:1.5px solid var(--violet-bd);
+  background:transparent;color:var(--gold);
+  border:1.5px solid var(--gold-bd);
 }
-.btn-outline-dark:hover{background:var(--violet-bg)}
+.btn-outline-dark:hover{background:var(--gold-bg)}
 .btn-sm{font-size:13px;padding:10px 20px}
 .btn-lg{font-size:17px;padding:18px 40px;border-radius:var(--r-md)}
 .btn svg{width:18px;height:18px}
@@ -173,11 +173,11 @@ body{
   margin-right:48px;flex-shrink:0;
 }
 .nav-logo-mark{
-  width:36px;height:36px;background:var(--violet);
-  border-radius:10px;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 12px rgba(109,40,217,.3);
+  width:40px;height:40px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
 }
-.nav-logo-mark svg{width:20px;height:20px}
+.nav-logo-mark img{width:40px;height:40px;object-fit:contain}
 .nav-logo-name{
   font-family:var(--f-display);font-size:20px;
   color:var(--text);letter-spacing:.01em;font-weight:600;
@@ -191,8 +191,8 @@ body{
   transition:color .15s,background .15s;
   white-space:nowrap;
 }
-.nav-link:hover{color:var(--violet);background:var(--violet-bg)}
-.nav-link.active{color:var(--violet);font-weight:600}
+.nav-link:hover{color:var(--gold);background:var(--gold-bg)}
+.nav-link.active{color:var(--gold);font-weight:600}
 .nav-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
 .nav-cta{font-size:14px;font-weight:600;padding:9px 20px;border-radius:var(--r-sm)}
 
@@ -235,7 +235,7 @@ body{
 .section-label{
   display:inline-block;
   font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--violet);margin-bottom:16px;
+  color:var(--gold);margin-bottom:16px;
 }
 .section-title{
   font-family:var(--f-display);
@@ -285,11 +285,11 @@ body{
   display:flex;align-items:center;justify-content:center;
   margin-bottom:18px;font-size:24px;
 }
-.feat-icon.violet{background:var(--violet-bg)}
-.feat-icon.coral{background:var(--coral-bg)}
-.feat-icon.cyan{background:var(--cyan-bg)}
-.feat-icon.amber{background:var(--amber-bg)}
-.feat-icon.green{background:var(--green-bg)}
+.feat-icon.gold{background:var(--gold-bg)}
+.feat-icon.rust{background:var(--rust-bg)}
+.feat-icon.earth{background:var(--earth-bg)}
+.feat-icon.ochre{background:var(--ochre-bg)}
+.feat-icon.moss{background:var(--moss-bg)}
 .feat-title{
   font-family:var(--f-display);font-size:20px;
   font-weight:600;color:var(--text);margin-bottom:10px;
@@ -299,7 +299,7 @@ body{
 
 /* Stats strip */
 .stats-strip{
-  background:var(--violet);
+  background:var(--gold);
   padding:56px 0;
 }
 .stats-grid{
@@ -326,11 +326,11 @@ body{
 .step{text-align:center;padding:0 12px}
 .step-num{
   width:52px;height:52px;border-radius:50%;
-  background:var(--violet);color:#fff;
+  background:var(--gold);color:#fff;
   font-family:var(--f-display);font-size:22px;font-weight:700;
   display:flex;align-items:center;justify-content:center;
   margin:0 auto 20px;
-  box-shadow:0 4px 16px rgba(109,40,217,.3);
+  box-shadow:0 4px 16px rgba(168,84,14,.3);
 }
 .step-title{font-family:var(--f-display);font-size:20px;font-weight:600;color:var(--text);margin-bottom:10px}
 .step-body{font-size:15px;color:var(--text-2);line-height:1.7}
@@ -345,14 +345,14 @@ body{
 /* Hero */
 .home-hero{
   min-height:calc(100vh - 68px);
-  background:linear-gradient(135deg,#2E1065 0%,#4C1D95 30%,#6D28D9 60%,#9333EA 85%,#C026D3 100%);
+  background:linear-gradient(135deg,#1A1410 0%,#3D2F24 25%,#7C4A2D 50%,#A8540E 75%,#EB6B40 100%);
   display:flex;align-items:center;
   position:relative;overflow:hidden;
   padding:80px 0 60px;
 }
 .home-hero::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(249,115,22,.18) 0%,transparent 60%),
+  background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(235,107,64,.18) 0%,transparent 60%),
              radial-gradient(ellipse 60% 80% at 20% 80%,rgba(8,145,178,.15) 0%,transparent 50%);
 }
 .home-hero-grid{
@@ -373,7 +373,7 @@ body{
   line-height:1.05;letter-spacing:-.02em;
   margin-bottom:24px;
 }
-.home-hero-h1 em{font-style:italic;color:#F9A8D4}
+.home-hero-h1 em{font-style:italic;color:#FFE08A}
 .home-hero-sub{
   font-size:18px;color:rgba(255,255,255,.8);
   line-height:1.7;max-width:480px;margin-bottom:40px;
@@ -389,7 +389,7 @@ body{
   position:absolute;
   width:300px;height:300px;
   border-radius:50%;
-  background:radial-gradient(circle,rgba(249,115,22,.35) 0%,transparent 70%);
+  background:radial-gradient(circle,rgba(235,107,64,.35) 0%,transparent 70%);
   animation:breathe 3s ease-in-out infinite;
 }
 @keyframes breathe{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.12);opacity:1}}
@@ -407,10 +407,10 @@ body{
 .chip-card-label{font-size:11px;color:rgba(255,255,255,.6);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
 .chip-chip{
   width:80px;height:56px;
-  background:linear-gradient(135deg,#F59E0B,#D97706);
+  background:linear-gradient(135deg,#FFB71A,#A8540E);
   border-radius:10px;margin-bottom:20px;
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 16px rgba(217,119,6,.4);
+  box-shadow:0 4px 16px rgba(255,183,26,.4);
   position:relative;overflow:hidden;
 }
 .chip-chip::before{
@@ -489,8 +489,8 @@ body{
   gap:80px;align-items:center;
 }
 .features-intro-media{
-  background:linear-gradient(135deg,var(--violet-bg),#fff);
-  border:1px solid var(--violet-bd);
+  background:linear-gradient(135deg,var(--gold-bg),#fff);
+  border:1px solid var(--gold-bd);
   border-radius:var(--r-xl);
   padding:32px;
   box-shadow:var(--sh-md);
@@ -502,11 +502,11 @@ body{
 }
 .mini-app-title{font-family:var(--f-display);font-size:17px;font-weight:600;color:var(--text)}
 .mini-app-badge{
-  background:var(--green-bg);color:var(--green);
+  background:var(--moss-bg);color:var(--moss);
   font-size:11px;font-weight:600;padding:3px 10px;border-radius:var(--r-pill);
 }
 .mini-app-pet{
-  background:var(--violet);border-radius:var(--r-md);
+  background:var(--gold);border-radius:var(--r-md);
   padding:20px;color:#fff;margin-bottom:14px;
 }
 .map-pet-name{font-family:var(--f-display);font-size:18px;font-weight:600;margin-bottom:3px}
@@ -525,7 +525,7 @@ body{
 .mc-label{font-size:10px;color:var(--text-3);margin-bottom:4px;font-weight:500;text-transform:uppercase;letter-spacing:.06em}
 .mc-val{font-size:15px;font-weight:600;color:var(--text)}
 .mc-sub{font-size:11px;color:var(--text-3);margin-top:2px}
-.mc-action{font-size:11px;color:var(--violet);font-weight:600;margin-top:4px}
+.mc-action{font-size:11px;color:var(--gold);font-weight:600;margin-top:4px}
 .wallet-mini{
   background:var(--ink);border-radius:var(--r-md);
   padding:14px 16px;display:flex;align-items:center;justify-content:space-between;
@@ -541,13 +541,13 @@ body{
 
 /* CTA band */
 .cta-band{
-  background:linear-gradient(135deg,#0F0A1E 0%,#2E1065 50%,#4C1D95 100%);
+  background:linear-gradient(135deg,#1A1410 0%,#3D2F24 50%,#7C4A2D 100%);
   padding:var(--sp-2xl) 0;
   position:relative;overflow:hidden;
 }
 .cta-band::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(249,115,22,.15) 0%,transparent 60%);
+  background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(235,107,64,.15) 0%,transparent 60%);
 }
 .cta-band-inner{
   text-align:center;position:relative;z-index:1;
@@ -579,7 +579,7 @@ body{
   border-radius:var(--r-lg);
   padding:28px;
 }
-.testi-stars{color:#F59E0B;font-size:16px;margin-bottom:14px;letter-spacing:2px}
+.testi-stars{color:#FFB71A;font-size:16px;margin-bottom:14px;letter-spacing:2px}
 .testi-quote{
   font-family:var(--f-display);
   font-size:17px;font-style:italic;color:var(--text);
@@ -598,12 +598,12 @@ body{
    PAGE: PET OWNERS
 ════════════════════════════════════════════════════════ */
 .owners-hero{
-  background:linear-gradient(135deg,#0C4A6E 0%,#0369A1 40%,#0891B2 70%,#06B6D4 100%);
+  background:linear-gradient(135deg,#3D2F24 0%,#7C4A2D 35%,#A8540E 70%,#EB6B40 100%);
   padding:100px 0 80px;position:relative;overflow:hidden;
 }
 .owners-hero::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 70% 60% at 30% 70%,rgba(109,40,217,.2) 0%,transparent 60%);
+  background:radial-gradient(ellipse 70% 60% at 30% 70%,rgba(168,84,14,.2) 0%,transparent 60%);
 }
 .owners-hero-grid{
   display:grid;grid-template-columns:1fr 460px;
@@ -624,17 +624,17 @@ body{
 /* Phone mockup for owners */
 .phone-mockup{
   width:260px;
-  background:#0F0A1E;
+  background:#1A1410;
   border-radius:44px;
   border:8px solid #1E1740;
-  box-shadow:0 0 0 1px #312E81, var(--sh-lg);
+  box-shadow:0 0 0 1px #3D2F24, var(--sh-lg);
   overflow:hidden;
   margin:0 auto;
   padding-top:2px;
 }
 .phone-notch-bar{
   height:28px;display:flex;align-items:center;justify-content:center;
-  background:#0F0A1E;
+  background:#1A1410;
 }
 .phone-notch-pill{
   width:80px;height:8px;background:#1E1740;border-radius:4px;
@@ -644,7 +644,7 @@ body{
 /* App screen inside phone */
 .app-scr{background:#F7F6FC}
 .app-scr-header{
-  background:var(--violet);
+  background:var(--gold);
   padding:20px 18px 18px;color:#fff;
 }
 .ash-greet{font-size:11px;opacity:.7;margin-bottom:3px}
@@ -658,7 +658,7 @@ body{
 .asb-val{font-size:13px;font-weight:600;color:var(--text)}
 .asb-sub{font-size:10px;color:#71717A;margin-top:1px}
 .asb-row{display:flex;justify-content:space-between;align-items:center}
-.asb-action{font-size:10px;color:var(--violet);font-weight:600}
+.asb-action{font-size:10px;color:var(--gold);font-weight:600}
 .asb-wallet{
   background:var(--ink);border-radius:10px;padding:11px 13px;
 }
@@ -709,8 +709,8 @@ body{
   display:flex;flex-direction:column;
 }
 .pricing-card.featured{
-  background:var(--violet);
-  border-color:var(--violet);
+  background:var(--gold);
+  border-color:var(--gold);
   box-shadow:var(--sh-glow),var(--sh-md);
   transform:scale(1.03);
 }
@@ -729,7 +729,7 @@ body{
 .pc-feat.ft{color:rgba(255,255,255,.9)}
 .pc-check{
   width:18px;height:18px;border-radius:50%;
-  background:var(--violet-bg);color:var(--violet);
+  background:var(--gold-bg);color:var(--gold);
   display:flex;align-items:center;justify-content:center;
   font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px;
 }
@@ -737,22 +737,22 @@ body{
 .pc-cta{
   padding:13px;border-radius:var(--r-sm);
   font-size:14px;font-weight:600;text-align:center;border:none;
-  background:var(--violet-bg);color:var(--violet);
+  background:var(--gold-bg);color:var(--gold);
   transition:background .15s;
 }
-.pc-cta.ft{background:rgba(255,255,255,.95);color:var(--violet)}
+.pc-cta.ft{background:rgba(255,255,255,.95);color:var(--gold)}
 .pc-cta.outline{background:transparent;border:1.5px solid var(--line-2);color:var(--text-3)}
 
 /* ════════════════════════════════════════════════════════
    PAGE: CLINICS
 ════════════════════════════════════════════════════════ */
 .clinics-hero{
-  background:linear-gradient(135deg,#064E3B 0%,#065F46 30%,#059669 65%,#10B981 100%);
+  background:linear-gradient(135deg,#2A3420 0%,#5A7340 40%,#8FA555 75%,#B8CC74 100%);
   padding:100px 0 80px;position:relative;overflow:hidden;
 }
 .clinics-hero::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 50% 60% at 80% 30%,rgba(109,40,217,.2) 0%,transparent 60%);
+  background:radial-gradient(ellipse 50% 60% at 80% 30%,rgba(168,84,14,.2) 0%,transparent 60%);
 }
 .clinics-hero-grid{
   display:grid;grid-template-columns:1fr 1fr;
@@ -786,7 +786,7 @@ body{
   font-size:11px;color:#71717A;font-family:monospace;
 }
 .bm-body{display:grid;grid-template-columns:160px 1fr;min-height:320px}
-.bm-sidebar{background:#1E1B4B;padding:16px}
+.bm-sidebar{background:#1A1410;padding:16px}
 .bm-logo{font-family:var(--f-display);font-size:14px;color:#fff;font-weight:600;margin-bottom:4px}
 .bm-clinic{font-size:10px;color:rgba(255,255,255,.4);margin-bottom:20px}
 .bm-nav-item{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:6px;font-size:11px;color:rgba(255,255,255,.5);margin-bottom:2px}
@@ -795,19 +795,19 @@ body{
 .bm-pip.on{background:#818CF8}
 .bm-main{padding:16px}
 .bm-patient{
-  background:var(--violet-bg);border:1px solid var(--violet-bd);
+  background:var(--gold-bg);border:1px solid var(--gold-bd);
   border-radius:8px;padding:10px 12px;
   display:flex;align-items:center;gap:10px;margin-bottom:12px;
 }
 .bm-pa{
   width:34px;height:34px;border-radius:50%;
-  background:var(--violet-bd);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;
+  background:var(--gold-bd);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;
 }
 .bm-pn{font-size:13px;font-weight:600;color:var(--text)}
 .bm-ps{font-size:10px;color:var(--text-3)}
 .bm-tag{
   margin-left:auto;font-size:9px;font-family:monospace;
-  background:var(--violet-bd);color:var(--violet);
+  background:var(--gold-bd);color:var(--gold);
   padding:2px 7px;border-radius:var(--r-pill);
 }
 .bm-timeline{display:flex;flex-direction:column;gap:6px}
@@ -815,7 +815,7 @@ body{
   background:#F7F6FC;border-radius:6px;padding:7px 10px;
   display:flex;align-items:flex-start;gap:8px;font-size:11px;
 }
-.bm-td{width:6px;height:6px;border-radius:50%;background:var(--violet);margin-top:3px;flex-shrink:0}
+.bm-td{width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:3px;flex-shrink:0}
 .bm-td.gr{background:#D4D4D8}
 .bm-dt{font-size:10px;color:var(--text-4);width:52px;flex-shrink:0}
 .bm-desc{color:var(--text)}
@@ -850,11 +850,11 @@ body{
   box-shadow:var(--sh-sm);
 }
 .clinic-price-card.featured{
-  border:2px solid #059669;
+  border:2px solid #5A7340;
   box-shadow:0 0 0 4px rgba(5,150,105,.08),var(--sh-md);
 }
 .cpc-tier{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);margin-bottom:12px}
-.cpc-tier.ft{color:#059669}
+.cpc-tier.ft{color:#5A7340}
 .cpc-name{font-family:var(--f-display);font-size:24px;font-weight:700;color:var(--text);margin-bottom:6px}
 .cpc-price{font-size:38px;font-weight:700;color:var(--text);line-height:1;margin-bottom:4px}
 .cpc-price span{font-size:15px;font-weight:400;color:var(--text-3)}
@@ -863,39 +863,39 @@ body{
 .cpc-feat{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--text-2);line-height:1.4}
 .cpc-check{
   width:17px;height:17px;border-radius:50%;
-  background:var(--green-bg);color:var(--green);
+  background:var(--moss-bg);color:var(--moss);
   display:flex;align-items:center;justify-content:center;
   font-size:9px;font-weight:700;flex-shrink:0;margin-top:1px;
 }
 .cpc-cta{
   width:100%;padding:12px;border-radius:var(--r-sm);
   font-size:14px;font-weight:600;text-align:center;border:none;
-  background:var(--green-bg);color:var(--green);cursor:pointer;
+  background:var(--moss-bg);color:var(--moss);cursor:pointer;
   transition:background .15s;
 }
-.cpc-cta.ft{background:#059669;color:#fff}
+.cpc-cta.ft{background:#5A7340;color:#fff}
 
 /* Demo CTA */
 .demo-cta-band{
-  background:linear-gradient(135deg,#064E3B,#059669);
+  background:linear-gradient(135deg,#2A3420,#5A7340);
   padding:var(--sp-2xl) 0;
   text-align:center;position:relative;overflow:hidden;
 }
 .demo-cta-band::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 50% 80% at 80% 50%,rgba(6,182,212,.15) 0%,transparent 60%);
+  background:radial-gradient(ellipse 50% 80% at 80% 50%,rgba(124,74,45,.15) 0%,transparent 60%);
 }
 
 /* ════════════════════════════════════════════════════════
    PAGE: ABOUT
 ════════════════════════════════════════════════════════ */
 .about-hero{
-  background:linear-gradient(135deg,#1E1B4B 0%,#312E81 50%,#4338CA 100%);
+  background:linear-gradient(135deg,#1A1410 0%,#3D2F24 50%,#7C4A2D 100%);
   padding:100px 0 80px;text-align:center;position:relative;overflow:hidden;
 }
 .about-hero::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 60% 60% at 50% 80%,rgba(249,115,22,.15) 0%,transparent 60%);
+  background:radial-gradient(ellipse 60% 60% at 50% 80%,rgba(235,107,64,.15) 0%,transparent 60%);
 }
 .about-hero-inner{position:relative;z-index:1;}
 .about-hero-h1{
@@ -917,8 +917,8 @@ body{
   gap:80px;align-items:center;
 }
 .origin-visual{
-  background:linear-gradient(135deg,var(--violet-bg),#fff);
-  border:1px solid var(--violet-bd);
+  background:linear-gradient(135deg,var(--gold-bg),#fff);
+  border:1px solid var(--gold-bd);
   border-radius:var(--r-xl);
   padding:40px;
   text-align:center;
@@ -934,7 +934,7 @@ body{
   font-family:var(--f-display);font-size:17px;font-style:italic;
   color:var(--text);line-height:1.6;
   padding:16px 20px;
-  background:#fff;border-left:3px solid var(--violet);
+  background:#fff;border-left:3px solid var(--gold);
   border-radius:0 var(--r-sm) var(--r-sm) 0;
   text-align:left;
 }
@@ -959,7 +959,7 @@ body{
 
 /* Mission band */
 .mission-band{
-  background:var(--violet);padding:80px 0;text-align:center;
+  background:var(--gold);padding:80px 0;text-align:center;
 }
 .mission-h2{
   font-family:var(--f-display);
@@ -990,12 +990,12 @@ body{
    PAGE: SHOP
 ════════════════════════════════════════════════════════ */
 .shop-hero{
-  background:linear-gradient(135deg,#7C2D12 0%,#C2410C 40%,#F97316 75%,#FB923C 100%);
+  background:linear-gradient(135deg,#3D2F24 0%,#7C4A2D 30%,#A8540E 60%,#EB6B40 90%,#FFB71A 100%);
   padding:80px 0 60px;text-align:center;position:relative;overflow:hidden;
 }
 .shop-hero::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 60% 60% at 30% 30%,rgba(109,40,217,.2) 0%,transparent 60%);
+  background:radial-gradient(ellipse 60% 60% at 30% 30%,rgba(168,84,14,.2) 0%,transparent 60%);
 }
 .shop-hero-inner{position:relative;z-index:1;}
 .shop-hero-h1{
@@ -1022,25 +1022,25 @@ body{
 }
 .product-card:hover{transform:translateY(-4px);box-shadow:var(--sh-md)}
 .product-card.featured-product{
-  border:2px solid var(--coral);
-  box-shadow:0 0 0 4px rgba(249,115,22,.08),var(--sh-md);
+  border:2px solid var(--rust);
+  box-shadow:0 0 0 4px rgba(235,107,64,.08),var(--sh-md);
 }
 .product-visual{
   aspect-ratio:4/3;
   display:flex;align-items:center;justify-content:center;
   font-size:72px;position:relative;
 }
-.product-visual.chip-bg{background:linear-gradient(135deg,#1E1B4B,#4338CA)}
-.product-visual.tag-bg{background:linear-gradient(135deg,#065F46,#059669)}
-.product-visual.sub-bg{background:linear-gradient(135deg,#7C2D12,#F97316)}
-.product-visual.acc-bg{background:linear-gradient(135deg,#0C4A6E,#0891B2)}
+.product-visual.chip-bg{background:linear-gradient(135deg,#1A1410,#7C4A2D)}
+.product-visual.tag-bg{background:linear-gradient(135deg,#2A3420,#5A7340)}
+.product-visual.sub-bg{background:linear-gradient(135deg,#A8540E,#EB6B40)}
+.product-visual.acc-bg{background:linear-gradient(135deg,#3D2F24,#7C4A2D)}
 .product-visual-inner{
   position:relative;z-index:1;
   display:flex;flex-direction:column;align-items:center;gap:12px;
 }
 .product-badge{
   position:absolute;top:14px;right:14px;
-  background:var(--coral);color:#fff;
+  background:var(--rust);color:#fff;
   font-size:11px;font-weight:700;
   padding:4px 10px;border-radius:var(--r-pill);
 }
@@ -1054,11 +1054,11 @@ body{
 .product-cta{
   width:100%;padding:12px;border-radius:var(--r-sm);
   font-size:14px;font-weight:600;text-align:center;border:none;cursor:pointer;
-  background:var(--violet);color:#fff;
+  background:var(--gold);color:#fff;
   transition:background .15s;
 }
-.product-cta:hover{background:var(--violet-hi)}
-.product-cta.coral{background:var(--coral)}
+.product-cta:hover{background:var(--gold-hi)}
+.product-cta.coral{background:var(--rust)}
 .product-cta.coral:hover{background:#EA6C0C}
 .product-cta.outline{background:transparent;border:1.5px solid var(--line-2);color:var(--text-2)}
 .product-cta.outline:hover{background:var(--bg)}
@@ -1087,7 +1087,7 @@ body{
   padding:var(--sp-2xl) 0;
 }
 .chip-detail-visual{
-  background:linear-gradient(135deg,#1E1B4B,#4338CA);
+  background:linear-gradient(135deg,#1A1410,#7C4A2D);
   border-radius:var(--r-xl);
   padding:48px;
   display:flex;align-items:center;justify-content:center;
@@ -1097,15 +1097,15 @@ body{
 }
 .chip-detail-visual::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 70% 30%,rgba(249,115,22,.2) 0%,transparent 60%);
+  background:radial-gradient(circle at 70% 30%,rgba(235,107,64,.2) 0%,transparent 60%);
 }
 .chip-3d{
   width:120px;height:84px;
-  background:linear-gradient(135deg,#F59E0B,#D97706);
+  background:linear-gradient(135deg,#FFB71A,#A8540E);
   border-radius:14px;
   position:relative;z-index:1;
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 12px 40px rgba(217,119,6,.5);
+  box-shadow:0 12px 40px rgba(255,183,26,.5);
 }
 .chip-3d::before{
   content:'';position:absolute;inset:0;
@@ -1161,10 +1161,11 @@ body{
   display:flex;align-items:center;gap:10px;margin-bottom:16px;
 }
 .footer-logo-mark{
-  width:32px;height:32px;background:var(--violet);
-  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  width:36px;height:36px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
 }
-.footer-logo-mark svg{width:17px;height:17px}
+.footer-logo-mark img{width:36px;height:36px;object-fit:contain}
 .footer-logo-name{
   font-family:var(--f-display);font-size:18px;
   color:#fff;font-weight:600;
@@ -1239,9 +1240,9 @@ body{
   <div class="nav-inner">
     <a class="nav-logo" onclick="go('home')">
       <div class="nav-logo-mark">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <img src="logo.png" alt="Honeybee logo">
       </div>
-      <div class="nav-logo-name">PetVault</div>
+      <div class="nav-logo-name">Honeybee</div>
     </a>
     <div class="nav-links">
       <a class="nav-link" id="nl-home"    onclick="go('home')">Home</a>
@@ -1251,9 +1252,9 @@ body{
       <a class="nav-link" id="nl-shop"    onclick="go('shop')">Shop</a>
     </div>
     <div class="nav-actions">
-      <a class="nav-link" href="https://ianschwarz317.github.io/PetVault" target="_blank" style="color:var(--text-3)">Investor Demo ↗</a>
+      <a class="nav-link" href="https://ianschwarz317.github.io/Honeybee" target="_blank" style="color:var(--text-3)">Investor Demo ↗</a>
       <a class="nav-link" onclick="go('owners')" style="color:var(--text-3)">Log in</a>
-      <a class="btn btn-primary btn-sm nav-cta" onclick="go('shop')">Get PetVault</a>
+      <a class="btn btn-primary btn-sm nav-cta" onclick="go('shop')">Get Honeybee</a>
     </div>
     <button class="nav-toggle" id="navToggle" onclick="toggleDrawer()">
       <span></span>
@@ -1269,7 +1270,7 @@ body{
   <a class="nav-link" onclick="go('about');closeDrawer()">About</a>
   <a class="nav-link" onclick="go('shop');closeDrawer()">Shop</a>
   <div style="margin-top:16px;display:flex;gap:10px">
-    <a class="btn btn-primary btn-sm" onclick="go('shop');closeDrawer()" style="flex:1;justify-content:center">Get PetVault</a>
+    <a class="btn btn-primary btn-sm" onclick="go('shop');closeDrawer()" style="flex:1;justify-content:center">Get Honeybee</a>
   </div>
 </div>
 
@@ -1303,10 +1304,10 @@ body{
             <div class="chip-pulse">
               <svg viewBox="0 0 12 12" fill="none"><path d="M3 6l2.5 2.5L9 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <div class="chip-card-label">PetVault Digital ID</div>
+            <div class="chip-card-label">Honeybee Digital ID</div>
             <div class="chip-chip"><div class="chip-chip-center"></div></div>
             <div class="chip-pet-name">Max</div>
-            <div class="chip-pet-sub">Labrador Mix · 5 years · PV-4821</div>
+            <div class="chip-pet-sub">Labrador Mix · 5 years · HB-4821</div>
             <div class="chip-rows">
               <div class="chip-row"><span class="chip-row-k">Owner</span><span class="chip-row-v">J. Schwarz</span></div>
               <div class="chip-row"><span class="chip-row-k">Vaccines</span><span class="chip-row-v ok">✓ All current</span></div>
@@ -1343,22 +1344,22 @@ body{
         <div>
           <div class="section-label">Everything in one place</div>
           <h2 class="section-title">Health infrastructure for every pet.</h2>
-          <p class="section-sub" style="margin-bottom:32px">PetVault connects the chip to the cloud — giving owners, vets, and emergency responders instant access to everything that matters.</p>
+          <p class="section-sub" style="margin-bottom:32px">Honeybee connects the chip to the cloud — giving owners, vets, and emergency responders instant access to everything that matters.</p>
           <div style="display:flex;flex-direction:column;gap:12px">
             <div style="display:flex;align-items:center;gap:14px;font-size:15px;color:var(--text-2)">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--violet-bg);color:var(--violet);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--gold-bg);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
               Complete multi-clinic health history attached to the chip
             </div>
             <div style="display:flex;align-items:center;gap:14px;font-size:15px;color:var(--text-2)">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--coral-bg);color:var(--coral);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--rust-bg);color:var(--rust);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
               Instant lost pet identification for any smartphone
             </div>
             <div style="display:flex;align-items:center;gap:14px;font-size:15px;color:var(--text-2)">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--cyan-bg);color:var(--cyan);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--earth-bg);color:var(--earth);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
               AI-generated health briefs your vet can trust
             </div>
             <div style="display:flex;align-items:center;gap:14px;font-size:15px;color:var(--text-2)">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--green-bg);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--moss-bg);color:var(--moss);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">✓</div>
               Digital wallet passes for boarding, travel, and emergencies
             </div>
           </div>
@@ -1366,7 +1367,7 @@ body{
         <div class="features-intro-media">
           <div class="mini-app">
             <div class="mini-app-bar">
-              <div class="mini-app-title">Max's PetVault</div>
+              <div class="mini-app-title">Max's Honeybee</div>
               <div class="mini-app-badge">All clear</div>
             </div>
             <div class="mini-app-pet">
@@ -1393,7 +1394,7 @@ body{
             </div>
             <div class="wallet-mini">
               <div class="wm-left">
-                <div>PetVault Pass</div>
+                <div>Honeybee Pass</div>
                 <div class="wm-val">Max · Lock screen ready</div>
               </div>
               <div class="wm-btn">+ Wallet</div>
@@ -1408,38 +1409,38 @@ body{
   <section class="section" style="background:#fff">
     <div class="container">
       <div class="centered-head" style="margin-bottom:56px">
-        <div class="section-label">Why PetVault</div>
+        <div class="section-label">Why Honeybee</div>
         <h2 class="section-title">Built for every moment that matters.</h2>
-        <p class="section-sub centered">From routine wellness visits to emergency room arrivals — PetVault makes sure the right information is always there.</p>
+        <p class="section-sub centered">From routine wellness visits to emergency room arrivals — Honeybee makes sure the right information is always there.</p>
       </div>
       <div class="feat-grid">
         <div class="feat-card">
-          <div class="feat-icon violet">🔬</div>
+          <div class="feat-icon gold">🔬</div>
           <div class="feat-title">Chip-linked identity</div>
           <div class="feat-body">A permanent NFC microchip implanted by your vet. Any smartphone scans it in seconds — no shelter visit required to identify a lost pet.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon coral">📋</div>
+          <div class="feat-icon rust">📋</div>
           <div class="feat-title">Complete health records</div>
           <div class="feat-body">Every visit from every clinic, consolidated automatically. An AI brief synthesizes it all into plain English so no appointment starts from zero.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon cyan">🔔</div>
+          <div class="feat-icon earth">🔔</div>
           <div class="feat-title">Unified reminders</div>
           <div class="feat-body">One source for what's due and when, regardless of how many clinics your pet has visited. No more duplicate reminders or missed care gaps.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon amber">🎓</div>
+          <div class="feat-icon ochre">🎓</div>
           <div class="feat-title">Owner education</div>
           <div class="feat-body">Every reminder explains the "why" through vet-produced videos and articles. Informed owners keep better appointments and feel less upsold.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon green">💳</div>
+          <div class="feat-icon moss">💳</div>
           <div class="feat-title">Digital wallet pass</div>
           <div class="feat-body">Your pet's verified health pass lives in Apple or Google Wallet. Perfect for boarding, travel, and emergencies — always accessible, zero login.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon violet">🏥</div>
+          <div class="feat-icon gold">🏥</div>
           <div class="feat-title">VaultVet clinic portal</div>
           <div class="feat-body">Vets forward records directly to the chip. Discharge templates, care plans, and medication reminders sent to owners' phones at checkout.</div>
         </div>
@@ -1481,9 +1482,9 @@ body{
       <div class="testi-grid">
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
-          <div class="testi-quote">"Max got out during a thunderstorm. Someone scanned his chip and called me within four minutes. I can't imagine life without PetVault."</div>
+          <div class="testi-quote">"Max got out during a thunderstorm. Someone scanned his chip and called me within four minutes. I can't imagine life without Honeybee."</div>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:var(--violet-bg)">👩</div>
+            <div class="testi-avatar" style="background:var(--gold-bg)">👩</div>
             <div>
               <div class="testi-name">Sarah K.</div>
               <div class="testi-role">Dog owner · Salt Lake City, UT</div>
@@ -1492,9 +1493,9 @@ body{
         </div>
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
-          <div class="testi-quote">"My cats see three different vets. Before PetVault, keeping their records straight was a nightmare. Now everything's in one place and my vet loves it."</div>
+          <div class="testi-quote">"My cats see three different vets. Before Honeybee, keeping their records straight was a nightmare. Now everything's in one place and my vet loves it."</div>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:var(--coral-bg)">👨</div>
+            <div class="testi-avatar" style="background:var(--rust-bg)">👨</div>
             <div>
               <div class="testi-name">James T.</div>
               <div class="testi-role">Cat owner · Denver, CO</div>
@@ -1503,9 +1504,9 @@ body{
         </div>
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
-          <div class="testi-quote">"As an ER vet, I can't overstate how valuable it is to pull up a complete health history the moment an emergency patient arrives. PetVault has changed how we work."</div>
+          <div class="testi-quote">"As an ER vet, I can't overstate how valuable it is to pull up a complete health history the moment an emergency patient arrives. Honeybee has changed how we work."</div>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:var(--green-bg)">👩‍⚕️</div>
+            <div class="testi-avatar" style="background:var(--moss-bg)">👩‍⚕️</div>
             <div>
               <div class="testi-name">Dr. Monica R., DVM</div>
               <div class="testi-role">Emergency Veterinarian</div>
@@ -1559,7 +1560,7 @@ body{
               <div class="app-scr">
                 <div class="app-scr-header">
                   <div class="ash-greet">Welcome back, Jessica</div>
-                  <div class="ash-name">Max's PetVault</div>
+                  <div class="ash-name">Max's Honeybee</div>
                   <div class="ash-badges">
                     <div class="ash-badge gr">All current</div>
                     <div class="ash-badge">Plus member</div>
@@ -1590,20 +1591,20 @@ body{
                     <div style="display:flex;flex-direction:column;gap:5px;margin-top:4px">
                       <div style="display:flex;justify-content:space-between;font-size:11px">
                         <span style="color:var(--text-2)">Rabies</span>
-                        <span style="color:var(--green);font-weight:600">Current</span>
+                        <span style="color:var(--moss);font-weight:600">Current</span>
                       </div>
                       <div style="display:flex;justify-content:space-between;font-size:11px">
                         <span style="color:var(--text-2)">DHPP</span>
-                        <span style="color:var(--green);font-weight:600">Current</span>
+                        <span style="color:var(--moss);font-weight:600">Current</span>
                       </div>
                       <div style="display:flex;justify-content:space-between;font-size:11px">
                         <span style="color:var(--text-2)">Bordetella</span>
-                        <span style="color:var(--green);font-weight:600">Current</span>
+                        <span style="color:var(--moss);font-weight:600">Current</span>
                       </div>
                     </div>
                   </div>
                   <div class="asb-wallet">
-                    <div class="asw-top">PetVault Pass</div>
+                    <div class="asw-top">Honeybee Pass</div>
                     <div class="asw-val">Max · Verified ID</div>
                     <div class="asw-row">
                       <div class="asw-info">Boarding · Travel · Emergency</div>
@@ -1630,17 +1631,17 @@ body{
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-title">Order your chip</div>
-          <div class="step-body">Purchase the PetVault chip for $29.99 from our shop or through your veterinary clinic. Book a standard appointment for implantation — it takes less than a minute.</div>
+          <div class="step-body">Purchase the Honeybee chip for $29.99 from our shop or through your veterinary clinic. Book a standard appointment for implantation — it takes less than a minute.</div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-title">Set up your profile</div>
-          <div class="step-body">Create your PetVault account, add your pet's details, and connect your chosen membership plan. Your vet will start syncing records to the chip automatically.</div>
+          <div class="step-body">Create your Honeybee account, add your pet's details, and connect your chosen membership plan. Your vet will start syncing records to the chip automatically.</div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-title">Add to your wallet</div>
-          <div class="step-body">Add your pet's PetVault Pass to Apple or Google Wallet. Reminders, records, and emergency contacts are always one tap away — no app required.</div>
+          <div class="step-body">Add your pet's Honeybee Pass to Apple or Google Wallet. Reminders, records, and emergency contacts are always one tap away — no app required.</div>
         </div>
       </div>
     </div>
@@ -1653,33 +1654,33 @@ body{
         <div>
           <div class="section-label">Everything you need</div>
           <h2 class="section-title">Built for real pet owners.</h2>
-          <p class="section-sub" style="margin-bottom:40px">From the dog park to the emergency room, PetVault has you covered.</p>
+          <p class="section-sub" style="margin-bottom:40px">From the dog park to the emergency room, Honeybee has you covered.</p>
           <a class="btn btn-primary" onclick="go('shop')">Get started today</a>
         </div>
         <div class="benefit-list">
           <div class="benefit-item">
-            <div class="benefit-icon violet">🆔</div>
+            <div class="benefit-icon gold">🆔</div>
             <div class="benefit-content">
               <div class="benefit-title">Instant identification</div>
               <div class="benefit-body">Anyone can scan your pet's chip to get your contact info. No shelter trip, no hold, no waiting. You're reunited in minutes, not days.</div>
             </div>
           </div>
           <div class="benefit-item">
-            <div class="benefit-icon coral">🤖</div>
+            <div class="benefit-icon rust">🤖</div>
             <div class="benefit-content">
               <div class="benefit-title">AI health brief</div>
               <div class="benefit-body">Our AI synthesizes your pet's complete history into a clear, plain-English summary. Every vet appointment starts fully informed.</div>
             </div>
           </div>
           <div class="benefit-item">
-            <div class="benefit-icon cyan">🔔</div>
+            <div class="benefit-icon earth">🔔</div>
             <div class="benefit-content">
               <div class="benefit-title">One source for reminders</div>
-              <div class="benefit-body">No more reminders from five different clinics. PetVault is the single, authoritative source — and every reminder explains why it matters.</div>
+              <div class="benefit-body">No more reminders from five different clinics. Honeybee is the single, authoritative source — and every reminder explains why it matters.</div>
             </div>
           </div>
           <div class="benefit-item">
-            <div class="benefit-icon green">💳</div>
+            <div class="benefit-icon moss">💳</div>
             <div class="benefit-content">
               <div class="benefit-title">Lock screen health pass</div>
               <div class="benefit-body">Your pet's verified pass lives in your wallet. Boarding facilities, groomers, and airlines can scan it in seconds.</div>
@@ -1696,7 +1697,7 @@ body{
       <div class="centered-head" style="margin-bottom:56px">
         <div class="section-label">Membership plans</div>
         <h2 class="section-title">Choose what works for you.</h2>
-        <p class="section-sub centered">All plans require a one-time $29.99 PetVault chip. Cancel anytime.</p>
+        <p class="section-sub centered">All plans require a one-time $29.99 Honeybee chip. Cancel anytime.</p>
       </div>
       <div class="pricing-grid">
         <div class="pricing-card">
@@ -1707,7 +1708,7 @@ body{
           <ul class="pc-feats">
             <li class="pc-feat"><div class="pc-check">✓</div>NFC chip identity</li>
             <li class="pc-feat"><div class="pc-check">✓</div>Lost pet contact display</li>
-            <li class="pc-feat"><div class="pc-check">✓</div>PetVault dog tag included</li>
+            <li class="pc-feat"><div class="pc-check">✓</div>Honeybee dog tag included</li>
           </ul>
           <div class="pc-cta outline" style="cursor:default">Included with chip</div>
         </div>
@@ -1770,10 +1771,10 @@ body{
             <div class="bm-bar">
               <div class="bm-dots">
                 <div class="bm-dot" style="background:#EF4444"></div>
-                <div class="bm-dot" style="background:#F59E0B"></div>
+                <div class="bm-dot" style="background:#FFB71A"></div>
                 <div class="bm-dot" style="background:#22C55E"></div>
               </div>
-              <div class="bm-url">app.petvault.com/clinic/vaulvet</div>
+              <div class="bm-url">app.honeybee.com/clinic/vaulvet</div>
             </div>
             <div class="bm-body">
               <div class="bm-sidebar">
@@ -1791,7 +1792,7 @@ body{
                     <div class="bm-pn">Max Schwarz</div>
                     <div class="bm-ps">Lab Mix · 5 yrs · J. Schwarz</div>
                   </div>
-                  <div class="bm-tag">PV-4821</div>
+                  <div class="bm-tag">HB-4821</div>
                 </div>
                 <div class="bm-timeline">
                   <div class="bm-tl"><div class="bm-td"></div><div class="bm-dt">Mar 2026</div><div><div>Annual wellness + Bordetella</div><div class="bm-dcl">Riverside Animal</div></div></div>
@@ -1847,32 +1848,32 @@ body{
       </div>
       <div class="feat-grid">
         <div class="feat-card">
-          <div class="feat-icon violet">🔍</div>
+          <div class="feat-icon gold">🔍</div>
           <div class="feat-title">Chip-based patient lookup</div>
-          <div class="feat-body">Look up any patient by their PetVault chip ID. The complete multi-clinic history appears instantly — no manual record requests needed.</div>
+          <div class="feat-body">Look up any patient by their Honeybee chip ID. The complete multi-clinic history appears instantly — no manual record requests needed.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon green">📤</div>
+          <div class="feat-icon moss">📤</div>
           <div class="feat-title">Real-time record forwarding</div>
           <div class="feat-body">After each visit, forward records directly to the pet's chip profile. The owner's app and wallet pass update automatically.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon coral">📝</div>
+          <div class="feat-icon rust">📝</div>
           <div class="feat-title">Discharge template library</div>
           <div class="feat-body">Build personalized aftercare plans from a comprehensive template library. Send videos, timelines, and medication schedules to the owner's phone at checkout.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon cyan">📊</div>
+          <div class="feat-icon earth">📊</div>
           <div class="feat-title">Clinic analytics</div>
           <div class="feat-body">Track engagement with discharge materials, monitor reminder effectiveness, and see which educational content drives the best compliance outcomes.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon amber">🔔</div>
+          <div class="feat-icon ochre">🔔</div>
           <div class="feat-title">Reminder management</div>
-          <div class="feat-body">Set and manage care reminders that go out through PetVault — not through your practice management software, and not lost in an email folder.</div>
+          <div class="feat-body">Set and manage care reminders that go out through Honeybee — not through your practice management software, and not lost in an email folder.</div>
         </div>
         <div class="feat-card">
-          <div class="feat-icon green">🔒</div>
+          <div class="feat-icon moss">🔒</div>
           <div class="feat-title">HIPAA-aligned security</div>
           <div class="feat-body">All patient data is encrypted in transit and at rest. Record sharing requires an established patient-doctor relationship. Audit logs for every action.</div>
         </div>
@@ -1961,7 +1962,7 @@ body{
           Our story
         </div>
         <h1 class="about-hero-h1">Built by a vet.<br>Powered by purpose.</h1>
-        <p class="about-hero-sub">PetVault was born in an exam room — out of the daily frustration of watching pets receive fragmented care simply because their history was scattered across too many places.</p>
+        <p class="about-hero-sub">Honeybee was born in an exam room — out of the daily frustration of watching pets receive fragmented care simply because their history was scattered across too many places.</p>
       </div>
     </div>
   </section>
@@ -1974,7 +1975,7 @@ body{
           <div class="origin-emoji">👩‍⚕️</div>
           <div class="origin-name">Angela Schwarz</div>
           <div class="origin-title">Founder &amp; CEO · DVM</div>
-          <div class="origin-quote">"Every pet deserves continuity of care. I built PetVault because that shouldn't depend on which clinic they happen to visit."</div>
+          <div class="origin-quote">"Every pet deserves continuity of care. I built Honeybee because that shouldn't depend on which clinic they happen to visit."</div>
         </div>
         <div class="origin-copy">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -2025,12 +2026,12 @@ body{
         <div class="value-card">
           <div class="value-icon">🌍</div>
           <div class="value-title">Access for everyone</div>
-          <div class="value-body">Core identification features are always free. The basic promise of PetVault — reunite a lost pet — costs nothing to use.</div>
+          <div class="value-body">Core identification features are always free. The basic promise of Honeybee — reunite a lost pet — costs nothing to use.</div>
         </div>
         <div class="value-card">
           <div class="value-icon">🚀</div>
           <div class="value-title">Relentlessly improving</div>
-          <div class="value-body">We ship fast, listen to veterinarians, and iterate continuously. The best version of PetVault is always the next one.</div>
+          <div class="value-body">We ship fast, listen to veterinarians, and iterate continuously. The best version of Honeybee is always the next one.</div>
         </div>
       </div>
     </div>
@@ -2045,28 +2046,28 @@ body{
       </div>
       <div class="team-grid">
         <div class="team-card">
-          <div class="team-avatar" style="background:var(--violet-bg)">👩‍⚕️</div>
+          <div class="team-avatar" style="background:var(--gold-bg)">👩‍⚕️</div>
           <div class="team-name">Angela Schwarz</div>
           <div class="team-role">Founder &amp; CEO</div>
-          <div class="team-tag tag tag-violet">Veterinary Medicine</div>
+          <div class="team-tag tag tag-gold">Veterinary Medicine</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar" style="background:var(--cyan-bg)">👨‍💻</div>
+          <div class="team-avatar" style="background:var(--earth-bg)">👨‍💻</div>
           <div class="team-name">Ron [Security Lead]</div>
           <div class="team-role">CTO &amp; Head of Security</div>
-          <div class="team-tag tag tag-cyan">Infrastructure</div>
+          <div class="team-tag tag tag-earth">Infrastructure</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar" style="background:var(--coral-bg)">👩‍🎨</div>
+          <div class="team-avatar" style="background:var(--rust-bg)">👩‍🎨</div>
           <div class="team-name">Design Team</div>
           <div class="team-role">Product &amp; Experience</div>
-          <div class="team-tag tag tag-coral">Product</div>
+          <div class="team-tag tag tag-rust">Product</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar" style="background:var(--green-bg)">👨‍⚕️</div>
+          <div class="team-avatar" style="background:var(--moss-bg)">👨‍⚕️</div>
           <div class="team-name">Veterinary Advisory</div>
           <div class="team-role">Clinical Advisors</div>
-          <div class="team-tag tag tag-green">Advisory</div>
+          <div class="team-tag tag tag-moss">Advisory</div>
         </div>
       </div>
     </div>
@@ -2077,7 +2078,7 @@ body{
     <div class="container">
       <div class="cta-band-inner">
         <h2 class="cta-band-h2">Join us in building<br>the future of pet health.</h2>
-        <p class="cta-band-sub">Whether you're a pet owner, a veterinarian, or an investor — there's a place for you in the PetVault story.</p>
+        <p class="cta-band-sub">Whether you're a pet owner, a veterinarian, or an investor — there's a place for you in the Honeybee story.</p>
         <div class="cta-band-actions">
           <a class="btn btn-coral btn-lg" onclick="go('shop')">Get started</a>
           <a class="btn btn-outline btn-lg" onclick="go('clinics')">For clinics</a>
@@ -2098,7 +2099,7 @@ body{
       <div class="shop-hero-inner">
         <div class="home-hero-eyebrow" style="display:inline-flex;margin-bottom:20px">
           <span style="font-size:16px">🛍️</span>
-          PetVault Shop
+          Honeybee Shop
         </div>
         <h1 class="shop-hero-h1">Everything your pet needs.</h1>
         <p class="shop-hero-sub">From the chip that starts it all to memberships, tags, and accessories.</p>
@@ -2113,14 +2114,14 @@ body{
         <div class="chip-detail-visual">
           <div style="text-align:center;position:relative;z-index:1">
             <div class="chip-3d" style="margin:0 auto 24px"><div class="chip-3d-center"></div></div>
-            <div style="font-family:var(--f-display);font-size:18px;color:#fff;font-weight:600;margin-bottom:6px">PetVault Microchip</div>
+            <div style="font-family:var(--f-display);font-size:18px;color:#fff;font-weight:600;margin-bottom:6px">Honeybee Microchip</div>
             <div style="font-size:13px;color:rgba(255,255,255,.6)">ISO 11784/11785 compliant · 15-digit · NFC</div>
           </div>
         </div>
         <div class="chip-detail-content">
-          <div class="tag tag-violet" style="margin-bottom:16px">Featured product</div>
-          <h2 class="chip-detail-h2">The PetVault Microchip</h2>
-          <p class="chip-detail-body">The foundation of the entire PetVault ecosystem. A permanent, pain-free NFC chip implanted by your vet in under a minute. ISO compliant and readable by any universal scanner — plus NFC for smartphone scanning with the PetVault app.</p>
+          <div class="tag tag-gold" style="margin-bottom:16px">Featured product</div>
+          <h2 class="chip-detail-h2">The Honeybee Microchip</h2>
+          <p class="chip-detail-body">The foundation of the entire Honeybee ecosystem. A permanent, pain-free NFC chip implanted by your vet in under a minute. ISO compliant and readable by any universal scanner — plus NFC for smartphone scanning with the Honeybee app.</p>
           <div class="chip-detail-specs">
             <div class="chip-spec"><span class="cs-key">Standard</span><span class="cs-val">ISO 11784/11785</span></div>
             <div class="chip-spec"><span class="cs-key">Frequency</span><span class="cs-val">134.2 kHz + NFC</span></div>
@@ -2155,19 +2156,19 @@ body{
           <div class="product-visual tag-bg">
             <div class="product-visual-inner">
               <div style="font-size:64px">🏷️</div>
-              <div style="font-size:13px;color:rgba(255,255,255,.8);font-weight:500">PetVault Dog Tag</div>
+              <div style="font-size:13px;color:rgba(255,255,255,.8);font-weight:500">Honeybee Dog Tag</div>
             </div>
           </div>
           <div class="product-info">
             <div class="product-tag">Accessory</div>
-            <div class="product-name">PetVault ID Tag</div>
-            <div class="product-desc">Durable stainless steel tag engraved with your pet's PetVault chip ID and a QR code that prompts finders to scan. Included free with every chip purchase.</div>
+            <div class="product-name">Honeybee ID Tag</div>
+            <div class="product-desc">Durable stainless steel tag engraved with your pet's Honeybee chip ID and a QR code that prompts finders to scan. Included free with every chip purchase.</div>
             <div class="product-price-row">
               <div>
                 <div class="product-price">Free</div>
                 <div class="product-price-sub">Included with chip</div>
               </div>
-              <div class="tag tag-green">Included</div>
+              <div class="tag tag-moss">Included</div>
             </div>
             <div class="product-cta outline" style="cursor:default">Included with chip</div>
           </div>
@@ -2183,8 +2184,8 @@ body{
           </div>
           <div class="product-info">
             <div class="product-tag">Membership</div>
-            <div class="product-name">PetVault Plus</div>
-            <div class="product-desc">Full health records, AI brief, unified reminders with the "why," digital wallet pass, and up to 3 pets. The complete PetVault experience for proactive owners.</div>
+            <div class="product-name">Honeybee Plus</div>
+            <div class="product-desc">Full health records, AI brief, unified reminders with the "why," digital wallet pass, and up to 3 pets. The complete Honeybee experience for proactive owners.</div>
             <div class="product-price-row">
               <div>
                 <div class="product-price">$9.99</div>
@@ -2196,7 +2197,7 @@ body{
         </div>
         <!-- Pro membership -->
         <div class="product-card">
-          <div class="product-visual" style="background:linear-gradient(135deg,#4C1D95,#7C3AED)">
+          <div class="product-visual" style="background:linear-gradient(135deg,#7C4A2D,#A8540E)">
             <div class="product-visual-inner">
               <div style="font-size:64px">💎</div>
               <div style="font-size:13px;color:rgba(255,255,255,.8);font-weight:500">Pro Membership</div>
@@ -2204,7 +2205,7 @@ body{
           </div>
           <div class="product-info">
             <div class="product-tag">Membership</div>
-            <div class="product-name">PetVault Pro</div>
+            <div class="product-name">Honeybee Pro</div>
             <div class="product-desc">Everything in Plus — plus unlimited pets, family account sharing, VaultVet discharge plan access, and priority support. Perfect for multi-pet households.</div>
             <div class="product-price-row">
               <div>
@@ -2226,7 +2227,7 @@ body{
           <div class="product-info">
             <div class="product-tag">Accessory</div>
             <div class="product-name">Replacement ID Tag</div>
-            <div class="product-desc">Same durable stainless steel PetVault tag — for when tags get lost, worn, or you want one for a second collar. Available in standard and engraved styles.</div>
+            <div class="product-desc">Same durable stainless steel Honeybee tag — for when tags get lost, worn, or you want one for a second collar. Available in standard and engraved styles.</div>
             <div class="product-price-row">
               <div>
                 <div class="product-price">$12.99</div>
@@ -2238,7 +2239,7 @@ body{
         </div>
         <!-- Gift bundle -->
         <div class="product-card">
-          <div class="product-visual" style="background:linear-gradient(135deg,#831843,#DB2777)">
+          <div class="product-visual" style="background:linear-gradient(135deg,#A8540E,#FFB71A)">
             <div class="product-visual-inner">
               <div style="font-size:64px">🎁</div>
               <div style="font-size:13px;color:rgba(255,255,255,.8);font-weight:500">Gift Bundle</div>
@@ -2246,21 +2247,21 @@ body{
           </div>
           <div class="product-info">
             <div class="product-tag">Bundle</div>
-            <div class="product-name">PetVault Gift Bundle</div>
+            <div class="product-name">Honeybee Gift Bundle</div>
             <div class="product-desc">The perfect gift for a new pet owner. Includes the microchip, a 3-month Plus membership, and a premium engraved tag — packaged beautifully.</div>
             <div class="product-price-row">
               <div>
                 <div class="product-price">$59.99</div>
                 <div class="product-price-sub">saves $10 vs. buying separately</div>
               </div>
-              <div class="tag tag-coral">Save $10</div>
+              <div class="tag tag-rust">Save $10</div>
             </div>
-            <div class="product-cta" style="background:#DB2777">Shop gift bundle</div>
+            <div class="product-cta" style="background:#A8540E">Shop gift bundle</div>
           </div>
         </div>
         <!-- Clinic starter -->
         <div class="product-card">
-          <div class="product-visual" style="background:linear-gradient(135deg,#064E3B,#10B981)">
+          <div class="product-visual" style="background:linear-gradient(135deg,#2A3420,#5A7340)">
             <div class="product-visual-inner">
               <div style="font-size:64px">🏥</div>
               <div style="font-size:13px;color:rgba(255,255,255,.8);font-weight:500">Clinic Starter Kit</div>
@@ -2269,14 +2270,14 @@ body{
           <div class="product-info">
             <div class="product-tag">For clinics</div>
             <div class="product-name">Clinic Starter Kit</div>
-            <div class="product-desc">Everything your practice needs to start offering PetVault chips. Includes 25 chips, display materials, and one month of VaultVet Professional free.</div>
+            <div class="product-desc">Everything your practice needs to start offering Honeybee chips. Includes 25 chips, display materials, and one month of VaultVet Professional free.</div>
             <div class="product-price-row">
               <div>
                 <div class="product-price">$349</div>
                 <div class="product-price-sub">25 chips + VaultVet trial</div>
               </div>
             </div>
-            <div class="product-cta" style="background:#059669" onclick="go('clinics')">For clinics →</div>
+            <div class="product-cta" style="background:#5A7340" onclick="go('clinics')">For clinics →</div>
           </div>
         </div>
       </div>
@@ -2320,9 +2321,9 @@ body{
       <div class="footer-brand">
         <div class="footer-logo">
           <div class="footer-logo-mark">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7l9 5 9-5-9-5zM3 17l9 5 9-5M3 12l9 5 9-5" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <img src="logo.png" alt="Honeybee logo">
           </div>
-          <div class="footer-logo-name">PetVault</div>
+          <div class="footer-logo-name">Honeybee</div>
         </div>
         <p class="footer-tagline">A microchip beneath the skin. A complete health ecosystem in the cloud. Built for pets, their owners, and the vets who care for them.</p>
 
@@ -2343,7 +2344,7 @@ body{
           <a class="footer-link" onclick="go('about')">About us</a>
           <a class="footer-link">Careers</a>
           <a class="footer-link">Press</a>
-          <a class="footer-link" href="https://ianschwarz317.github.io/PetVault" target="_blank">Investor Demo ↗</a>
+          <a class="footer-link" href="https://ianschwarz317.github.io/Honeybee" target="_blank">Investor Demo ↗</a>
           <a class="footer-link">Contact</a>
         </div>
       </div>
@@ -2361,7 +2362,7 @@ body{
   </div>
   <div class="container">
     <div class="footer-bottom">
-      <div>© 2026 PetVault, Inc. All rights reserved.</div>
+      <div>© 2026 Honeybee, Inc. All rights reserved.</div>
       <div class="footer-bottom-links">
         <a class="footer-link" style="color:rgba(255,255,255,.35)">Privacy Policy</a>
         <a class="footer-link" style="color:rgba(255,255,255,.35)">Terms of Service</a>
